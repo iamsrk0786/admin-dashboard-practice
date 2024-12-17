@@ -45,7 +45,6 @@ const login = () => {
                     console.error(error)
                     }
     }
-
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -56,12 +55,13 @@ const login = () => {
         placeholder="Name"
         value={formData.name}
         onChange={handleChange} */}
+        
             <input type="text" value={name} onChange={(e)=>setname(e.target.value)}/>
             <br/>
             <label>email:</label>
             <input type="email" value={email} onChange={(e)=>setemail(e.target.value)}/>
             <br/>
-            <label>password:</label>
+            <label>password:</label>  
             <input type="password" value={password} onChange={(e)=>setpassword(e.target.value)}/>
             <br/>
             <button type="submit">submit</button>

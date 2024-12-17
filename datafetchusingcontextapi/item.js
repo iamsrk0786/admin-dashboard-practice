@@ -49,7 +49,7 @@ const Home = () => {
         <div>
           <h2>Edit Item</h2>
           <input
-            type="text"
+            type="text" 
             value={editItem.value}
             onChange={(e) => setEditItem({ ...editItem, value: e.target.value })}
           />
